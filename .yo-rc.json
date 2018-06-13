@@ -1,0 +1,9 @@
+{
+  "generator-node": {
+    "promptValues": {
+      "authorName": "Diego Resendez",
+      "authorEmail": "diego.resendez@zero-oneit.com",
+      "authorUrl": ""
+    }
+  }
+}

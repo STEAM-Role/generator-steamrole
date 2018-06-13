@@ -1,0 +1,5 @@
+{
+  "audience": "STEAM-Role:API:users",
+  "issuer": "STEAM-Role:API",
+  "header": "x-authorization"
+}

@@ -1,0 +1,12 @@
+[
+  {
+    "resource":"$ROOT",
+    "permissions":[
+      {
+        "roles": "*",
+        "methods": ["GET"],
+        "action": "allow"
+      }
+    ]
+  }
+]

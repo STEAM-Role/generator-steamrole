@@ -1,0 +1,85 @@
+{
+  "name": "generator-steamrole",
+  "version": "0.0.0",
+  "description": "STEAM Role SaaS Generator to create services quickly.",
+  "author": {
+    "name": "Diego Resendez",
+    "email": "diego.resendez@zero-oneit.com"
+  },
+  "files": [
+    "generators"
+  ],
+  "main": "generators/index.js",
+  "keywords": [
+    "",
+    "yeoman-generator"
+  ],
+  "devDependencies": {
+    "yeoman-test": "^1.7.0",
+    "yeoman-assert": "^3.1.0",
+    "coveralls": "^3.0.0",
+    "nsp": "^2.8.0",
+    "eslint": "^4.19.1",
+    "prettier": "^1.11.1",
+    "husky": "^0.14.3",
+    "lint-staged": "^6.1.1",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-plugin-prettier": "^2.6.0",
+    "eslint-config-xo": "^0.20.1",
+    "jest": "^22.0.6"
+  },
+  "engines": {
+    "npm": ">= 4.0.0"
+  },
+  "dependencies": {
+    "chalk": "^2.1.0",
+    "glob": "^7.1.2",
+    "randomstring": "^1.1.5",
+    "slugify": "^1.3.0",
+    "yeoman-generator": "^2.0.1",
+    "yosay": "^2.0.1"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "scripts": {
+    "prepublishOnly": "nsp check",
+    "pretest": "eslint .",
+    "precommit": "lint-staged",
+    "test": "jest"
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint --fix",
+      "git add"
+    ],
+    "*.json": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "eslintConfig": {
+    "extends": [
+      "xo",
+      "prettier"
+    ],
+    "env": {
+      "jest": true,
+      "node": true
+    },
+    "rules": {
+      "prettier/prettier": [
+        "error",
+        {
+          "singleQuote": true,
+          "printWidth": 90
+        }
+      ]
+    },
+    "plugins": [
+      "prettier"
+    ]
+  },
+  "repository": "STEAM-Role/generator-steamrole",
+  "license": "MIT"
+}
